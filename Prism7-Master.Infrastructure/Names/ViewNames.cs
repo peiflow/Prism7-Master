@@ -9,5 +9,6 @@ namespace Prism7_Master.Infrastructure.Names
     public class ViewNames
     {
         public static string MENU = "Menu";
+        public static string CONTENT = "Content";
     }
 }

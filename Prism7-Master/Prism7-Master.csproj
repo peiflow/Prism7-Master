@@ -114,6 +114,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ModuleContent\ModuleContent.csproj">
+      <Project>{323ff40b-a0e9-4f6b-b5ee-61e06a3c37b7}</Project>
+      <Name>ModuleContent</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModuleMenu\ModuleMenu.csproj">
       <Project>{362eeb4f-0eb1-49c6-8a0b-794710b4f714}</Project>
       <Name>ModuleMenu</Name>

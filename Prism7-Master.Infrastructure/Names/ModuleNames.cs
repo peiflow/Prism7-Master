@@ -9,5 +9,6 @@ namespace Prism7_Master.Infrastructure.Names
     public class ModuleNames
     {
         public static string MENU_MODULE = "MenuModule";
+        public static string CONTENT_MODULE = "ContentModule";
     }
 }
