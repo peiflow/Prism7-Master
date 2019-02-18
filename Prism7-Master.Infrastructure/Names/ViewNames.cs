@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Prism7_Master.Infrastructure.Names
 {
-    public class RegionNames
+    public class ViewNames
     {
-        public static string CONTENT_REGION = "ContentRegion";
-        public static string TOOLBAR_REGION = "ToolbarRegion";
+        public static string MENU = "Menu";
     }
 }

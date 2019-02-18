@@ -114,6 +114,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ModuleMenu\ModuleMenu.csproj">
+      <Project>{362eeb4f-0eb1-49c6-8a0b-794710b4f714}</Project>
+      <Name>ModuleMenu</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Prism7-Master.Infrastructure\Prism7-Master.Infrastructure.csproj">
       <Project>{B561A4F1-3F43-45EF-AED2-7A2D7132D983}</Project>
       <Name>Prism7-Master.Infrastructure</Name>

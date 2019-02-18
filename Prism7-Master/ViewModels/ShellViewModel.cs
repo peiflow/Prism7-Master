@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Regions;
 using Prism7_Master.Infrastructure.Bases;
+using Prism7_Master.Infrastructure.Names;
 using Names = Prism7_Master.Infrastructure.Names;
 
 namespace Prism7_Master.ViewModels
@@ -28,7 +29,9 @@ namespace Prism7_Master.ViewModels
         private void Navigate(object navigatePath)
         {
             if (navigatePath != null)
+            {
                 _regionManager.RequestNavigate(Names.RegionNames.CONTENT_REGION, navigatePath.ToString(), NavigationComplete);
+            }
         }
 
         private void NavigationComplete(NavigationResult result)

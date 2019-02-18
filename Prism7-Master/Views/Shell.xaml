@@ -3,11 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:inf="clr-namespace:Prism7_Master.Infrastructure.Names;assembly=Prism7-Master.Infrastructure"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:local="clr-namespace:Prism7_Master.Views"
         mc:Ignorable="d"
         Title="{Binding Title}" Height="450" Width="800">
-    <Grid Background="Transparent">
+    <Grid >
+        <DockPanel LastChildFill="True">
+            <ContentControl DockPanel.Dock="Left" prism:RegionManager.RegionName="{x:Static inf:RegionNames.TOOLBAR_REGION}" />
+            <ContentControl DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.CONTENT_REGION}"/>
+        </DockPanel>
     </Grid>
 </Window>
