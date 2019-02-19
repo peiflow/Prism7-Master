@@ -10,5 +10,6 @@ namespace Prism7_Master.Infrastructure.Names
     {
         public static string MENU = "Menu";
         public static string CONTENT = "Content";
+        public static string CONTENTB = "ContentB";
     }
 }
