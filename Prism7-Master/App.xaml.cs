@@ -24,7 +24,7 @@ namespace Prism7_Master
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<ModuleMenu.MenuModule>(InitializationMode.WhenAvailable);
-            moduleCatalog.AddModule<ModuleContent.ContentModule>(InitializationMode.OnDemand);
+            moduleCatalog.AddModule<ModuleContent.ContentModule>(InitializationMode.WhenAvailable);
 
         }
     }

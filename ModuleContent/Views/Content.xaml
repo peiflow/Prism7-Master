@@ -9,6 +9,6 @@
              prism:ViewModelLocator.AutoWireViewModel="True"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Gray">
-            
+        <Label Content="This is the Module Content A" FontSize="26" Foreground="WhiteSmoke"/>
     </Grid>
 </UserControl>

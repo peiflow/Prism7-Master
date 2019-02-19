@@ -11,7 +11,7 @@
         Title="{Binding Title}" Height="450" Width="800">
     <Grid >
         <DockPanel LastChildFill="True">
-            <ContentControl DockPanel.Dock="Left" prism:RegionManager.RegionName="{x:Static inf:RegionNames.TOOLBAR_REGION}" />
+            <ContentControl DockPanel.Dock="Left" prism:RegionManager.RegionName="{x:Static inf:RegionNames.TOOLBAR_REGION}" Width="175"/>
             <ContentControl DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.CONTENT_REGION}"/>
         </DockPanel>
     </Grid>
