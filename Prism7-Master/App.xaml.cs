@@ -25,6 +25,7 @@ namespace Prism7_Master
         {
             moduleCatalog.AddModule<ModuleMenu.MenuModule>(InitializationMode.WhenAvailable);
             moduleCatalog.AddModule<ModuleContent.ContentModule>(InitializationMode.WhenAvailable);
+            moduleCatalog.AddModule<ModuleContentB.ContentBModule>(InitializationMode.OnDemand);
 
         }
     }
