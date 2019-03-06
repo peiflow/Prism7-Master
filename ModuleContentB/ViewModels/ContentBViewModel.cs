@@ -1,4 +1,6 @@
-﻿using Prism.Regions;
+﻿using Prism.Commands;
+using Prism.Regions;
+using Prism7_Master.Helpers;
 using Prism7_Master.Infrastructure.Bases;
 using System;
 using System.Collections.Generic;
@@ -12,7 +14,14 @@ namespace ModuleContentB.ViewModels
     public class ContentBViewModel : ViewModelBase, INavigationAware
     {
         #region Properties
+        ErrorEventHelper errorEventHelper;
 
+        public DelegateCommand MakeThingsCmd { get; private set; }
+
+        private string labelText;
+        public string LabelText { get => labelText; set { labelText = value; RaisePropertyChanged("LabelText"); } }
+
+        
         #endregion
 
         #region Constructor
@@ -20,6 +29,11 @@ namespace ModuleContentB.ViewModels
         {
             _container = container;
             _regionManager = regionManager;
+
+            LabelText = "TEXT";
+
+            errorEventHelper = new ErrorEventHelper();
+            MakeThingsCmd = new DelegateCommand(MakeThings);
         }   
         #endregion
 
@@ -35,6 +49,13 @@ namespace ModuleContentB.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
+        }
+        #endregion
+
+        #region Cmds
+        private void MakeThings()
+        {
+            errorEventHelper.RaiseError(this, new CustomEventArgs { Info = "Shit happens"});
         }
         #endregion
     }

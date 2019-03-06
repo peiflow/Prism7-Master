@@ -78,6 +78,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Prism7-Master.Helpers\Prism7-Master.Helpers.csproj">
+      <Project>{3BB72011-81F4-4A07-99AD-C7075A2186D9}</Project>
+      <Name>Prism7-Master.Helpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Prism7-Master.Infrastructure\Prism7-Master.Infrastructure.csproj">
       <Project>{B561A4F1-3F43-45EF-AED2-7A2D7132D983}</Project>
       <Name>Prism7-Master.Infrastructure</Name>
